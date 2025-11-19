@@ -1,0 +1,122 @@
+/* Base styles for desktop (default) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1178b8;
+    color: white;
+}
+
+h1, h2 {
+    margin: 0.5rem 0;
+}
+
+section {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.contact-info {
+    flex: 2;
+}
+
+.photo img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+}
+
+a {
+    color: #1178b8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Lists */
+ul {
+    padding-left: 2rem;
+}
+
+ul li::before {
+    content: none;
+    color: #1178b8;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+    section {
+        padding: 1.5rem;
+    }
+
+    .contact-container {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    header {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    h1, h2 {
+        font-size: 1.2rem;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        flex: 1;
+    }
+
+    .photo img {
+        max-width: 150px;
+        margin: 0 auto;
+    }
+
+    section {
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    section {
+        margin: 0.5rem auto;
+    }
+
+    ul {
+        padding-left: 1rem;
+    }
+}
